@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+.reserva {
+    margin: 30px;
+}
+
+.mapa {
+    margin: 30px;
+}
+
+@include v.tablet {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        height: 13vh;
+        margin: 10px;
+    }
+
+    .ul {
+        padding: 10px;
+        width: 15vh;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

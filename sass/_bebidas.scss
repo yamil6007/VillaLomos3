@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+.bebidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+    margin: 50px;
+
+    .imgbebidas {
+        height: 30vh;
+        width: auto;
+        padding: 2px;
+        margin: 10px;
+
+    }
+
+    @include v.tablet {
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .h1 {
+            font-size: 30px;
+        }
+
+        .logo {
+            height: 13vh;
+            margin: 10px;
+        }
+
+        .ul {
+            padding: 10px;
+            width: 15vh;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}

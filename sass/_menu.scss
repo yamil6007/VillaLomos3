@@ -1,0 +1,51 @@
+@use "variables" as v;
+
+.divmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    .imgmenu {
+        height: 30vh;
+        width: 40vh;
+        padding: 2px;
+        margin: 30px;
+    }
+
+    .sectmenu {
+        margin: 30px;
+    }
+
+    .pamenu {
+        width: 40vh;
+        text-align: center;
+        padding: 0px 0px 10px 30px;
+    }
+
+    @include v.tablet {
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .h1 {
+            font-size: 30px;
+        }
+
+        .logo {
+            height: 13vh;
+            margin: 10px;
+        }
+
+        .ul {
+            padding: 10px;
+            width: 15vh;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+}

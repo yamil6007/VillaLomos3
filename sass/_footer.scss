@@ -1,0 +1,25 @@
+@use "variables" as v;
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+
+    .ulfooter {
+    width: 40vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    .imgfooter {
+    height: 8vh;
+}
+    .wa {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+   
+}
+}
+

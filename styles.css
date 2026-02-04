@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playwrite NZ Basic;
+}
+
+/* header */
+
+.header {
+    background-color: #258d19;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logo {
+    height: 13vh;
+    margin: 10px;
+}
+
+
+img {
+    height: 50vh;
+    width: auto;
+}
+
+.h1 {
+    font-size: 40px;
+    color: red;
+}
+
+.ul {
+    padding: 20px;
+    width: 50vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+
+body {
+    background-color: #b4ff9a;
+}
+
+.h2 {
+    color: red;
+    text-align: center;
+    margin: 10px;
+}
+
+.divprincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#carouselExample{
+    
+    width: 80vh;
+    margin: 40px;
+}
+
+.h3 {
+    color: red;
+}
+
+/* menu */
+
+.divmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.imgmenu {
+    height: 30vh;
+    width: 40vh;
+    padding: 2px;
+    margin: 30px;
+}
+
+.sectmenu {
+    margin: 30px;
+}
+
+.pamenu {
+    width: 40vh;
+    text-align: center;
+    padding: 0px 0px 10px 30px;
+}
+
+/* bebidas */
+
+.bebidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+    margin: 50px;
+
+}
+
+.imgbebidas {
+    height: 30vh;
+    width: auto;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+/* nosotros */
+
+.divnosotros {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+.panosotros {
+    text-align: center;
+    width: 50vh;
+    margin: 0px 0px 0px 80px;
+}
+
+/* contactos */
+
+.reserva {
+    margin: 30px;
+}
+
+.mapa {
+    margin: 30px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+}
+
+.ulfooter {
+    width: 40vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.imgfooter {
+    height: 8vh;
+}
+
+.wa {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* medias queries */
+
+/* tablet */
+@media (min-width: 431px) and (max-width: 800px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        height: 13vh;
+        margin: 10px;
+    }
+
+    .ul {
+    padding: 10px;
+    width: 15vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* inicio */
+
+.video{
+    margin: 20px 0px 50px 130px;
+    width: 60vh;
+}
+
+/* menu */
+
+.divmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.imgmenu {
+    height: 30vh;
+    width: 30vh;
+    padding: 2px;
+    margin: 20px;
+}
+
+.sectmenu {
+    margin: 30px;
+}
+
+.pamenu {
+    width: 30vh;
+    text-align: center;
+    padding: 0px 0px 10px 30px;
+}
+
+/* bebidas */
+.bebidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.imgbebidas {
+    height: 30vh;
+    width: auto;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+/* nosotros */
+
+.divnosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+.panosotros {
+    text-align: center;
+    width: 50vh;
+    margin: 20px 0px 0px 0px;
+}
+
+.imgnosotros{
+    height: 40vh;
+    width: 45vh;
+
+}
+/* contactos */
+
+.reserva {
+    margin: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapa {
+    
+    margin: 30px 0px 30px 80px ;
+}
+.h3contacto{
+    text-align: center;
+    margin: 20px;
+}
+
+}
+
+ @media (min-width: 320px) and (max-width: 430px){
+     .header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row wrap;
+         width: 100vh;
+    }
+
+    .h1{
+        width: 5vh;
+        font-size: 25px;
+        
+    }
+
+    .logo {
+        height: 15vh;
+        margin: 40px;
+    }
+
+
+    .ul {
+
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+/* inicio */
+
+.body{
+    width: 100vh;
+}
+
+.maininicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.h2{
+    font-size: 20px;
+}
+
+.video{
+    margin: 30px 0px 50px 50px;
+    width: 60vh;
+}
+
+
+/* menu */
+
+.divmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.pamenu{
+    width: 40vh;
+    font-size: 12px;
+    text-align: center;
+}
+
+.imgmenu {
+    height: auto;
+    width: 40vh;
+    padding: 2px;
+    margin: 20px;
+}
+
+.sectmenu {
+    margin: 30px;
+}
+
+
+
+/* bebidas */
+.bebidas {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.imgbebidas {
+    height: 30vh;
+    width: auto;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+/* nosotros */
+
+.divnosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+.panosotros {
+    text-align: center;
+    width: 70vh;
+    margin: 20px 0px 0px 0px;
+}
+
+.imgnosotros{
+    height: auto;
+    width: 70vh;
+
+}
+/* contactos */
+
+.reserva {
+    margin: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapa {
+    
+    margin: 30px 80px 30px 80px ;
+}
+
+.imgmapa{
+    height: auto;
+    width: 70vw;
+}
+.h3contacto{
+    text-align: center;
+    margin: 20px;
+}

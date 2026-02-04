@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+
+$VerdeEsmeralda: #b4ff9a;
+$Rojo: red;
+$VerdeOscuro: #258d19;
+$Playwrite: Playwrite NZ Basic;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playwrite NZ Basic;
+}
+
+body {
+    background-color: $VerdeEsmeralda;
+}
+
+.h1 {
+    font-size: 40px;
+    color: $Rojo;
+}
+
+.h2 {
+    color: $Rojo;
+    text-align: center;
+    margin: 10px;
+}
+
+.h3 {
+    color: $Rojo;
+}
+
+// responsive tablet
+
+@mixin tablet{
+    @media (min-width: 451px) and (max-width: 800px){
+        @content
+    }
+}
+
+
+
+
+
+
