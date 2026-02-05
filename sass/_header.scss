@@ -13,6 +13,8 @@
         margin: 10px;
     }
 
+
+
     .ul {
         padding: 20px;
         width: 50vh;
@@ -20,11 +22,51 @@
         display: flex;
         justify-content: space-between;
 
+
+
         a {
             text-decoration: none;
             font-weight: 600;
             color: v.$Rojo;
+            animation: scale 2s forwards;
+        }
+
+    }
+
+    @include v.tablet {
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .h1 {
+            font-size: 30px;
+        }
+
+        .logo {
+            height: 13vh;
+            margin: 10px;
+        }
+
+        .ul {
+            padding: 10px;
+            width: 15vh;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
         }
     }
 
+}
+
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 2;
+    }
 }

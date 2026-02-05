@@ -15,7 +15,13 @@
 
     .sectmenu {
         margin: 30px;
+    
     }
+
+    img:hover{
+        animation: scale 2s forwards ;
+    }
+
 
     .pamenu {
         width: 40vh;
@@ -24,28 +30,77 @@
     }
 
     @include v.tablet {
-        .header {
+
+        .divmenu {
             display: flex;
-            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            text-align: center;
         }
 
-        .h1 {
-            font-size: 30px;
+        .imgmenu {
+            height: 30vh;
+            width: 30vh;
+            padding: 2px;
+            margin: 20px;
         }
 
-        .logo {
-            height: 13vh;
-            margin: 10px;
+        .sectmenu {
+            margin: 30px;
         }
 
-        .ul {
-            padding: 10px;
-            width: 15vh;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-
+        .pamenu {
+            width: 30vh;
+            text-align: center;
+            padding: 0px 0px 10px 30px;
         }
+
+
     }
 
+    @include v.mobile {
+        .divmenu {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .pamenu {
+            width: 40vh;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .imgmenu {
+            height: auto;
+            width: 40vh;
+            padding: 2px;
+            margin: 20px;
+            
+        }
+
+       
+
+        .sectmenu {
+            margin: 30px;
+        }
+
+    }
+
+}
+
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.3;
+    }
 }

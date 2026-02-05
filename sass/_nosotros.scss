@@ -18,26 +18,49 @@
     }
 
     @include v.tablet {
-        .header {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .h1 {
-            font-size: 30px;
-        }
-
-        .logo {
-            height: 13vh;
-            margin: 10px;
-        }
-
-        .ul {
-            padding: 10px;
-            width: 15vh;
-            list-style: none;
+        .divnosotros {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 30px;
+
+        }
+
+        .panosotros {
+            text-align: center;
+            width: 50vh;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .imgnosotros {
+            height: 40vh;
+            width: 45vh;
+
+        }
+    }
+
+    @include v.mobile {
+        .divnosotros {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 30px;
+
+        }
+
+        .panosotros {
+            text-align: center;
+            width: 70vh;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .imgnosotros {
+            height: auto;
+            width: 70vh;
 
         }
     }

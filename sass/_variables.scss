@@ -37,9 +37,20 @@ body {
 
 @mixin tablet{
     @media (min-width: 451px) and (max-width: 800px){
-        @content
+        @content;
     }
 }
+
+// responsive mobile
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 450px){
+        @content;
+    }
+}
+
+
+
 
 
 

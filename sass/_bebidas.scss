@@ -17,28 +17,61 @@
 
     }
 
+    img:hover {
+        animation: scale 2s forwards;
+    }
+
     @include v.tablet {
-        .header {
-            display: flex;
-            justify-content: space-between;
+
+        .bebidas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+
+
         }
 
-        .h1 {
-            font-size: 30px;
-        }
-
-        .logo {
-            height: 13vh;
+        .imgbebidas {
+            height: 30vh;
+            width: auto;
+            padding: 2px;
             margin: 10px;
-        }
-
-        .ul {
-            padding: 10px;
-            width: 15vh;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
 
         }
+
+    }
+
+    @include v.mobile {
+        .bebidas {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        .imgbebidas {
+            height: 30vh;
+            width: auto;
+            padding: 2px;
+            margin: 10px;
+
+        }
+
+    }
+}
+
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.3;
     }
 }
